@@ -1,0 +1,14 @@
+.wrapper {
+  position: absolute;
+  background-color: goldenrod;
+  height: 100px;
+  width: 150px;
+  outline: 1px solid black;
+}
+
+.dragAndDropItemTitle {
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}

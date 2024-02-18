@@ -1,0 +1,54 @@
+@keyframes transitionOnDrag {
+    0% {
+      top: -200;
+      left: -200;
+    }
+
+
+    33% {
+        top: -134;
+        left: -134;
+    }
+
+    66% {
+        top: -68;
+        left: -68;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.positionOnDrag {
+    animation: transitionOnDrag 0.3s forwards;
+}
+
+@keyframes transitionOnDrop {
+    0% {
+      top: 0;
+      left: 0;
+    }
+
+
+    33% {
+        top: -68;
+        left: -68;
+    }
+
+    66% {
+        top: -134;
+        left: -134;
+    }
+
+    100% {
+        top: -200;
+        left: -200;
+        opacity: 0;
+    }
+}
+
+.positionOnDrop {
+    animation: transitionOnDrop 0.3s forwards;
+}

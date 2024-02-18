@@ -1,0 +1,74 @@
+.wrapper,
+.wrapperWithOpacity,
+.wrapperWithoutOpacity {
+  background-color: goldenrod;
+  height: 120px;
+  width: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.dragDropItemTitle {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.dragDropItemWrapper {
+  height: 100%;
+}
+
+.dragDropItemContents {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@keyframes opacityTransparentTransition {
+  0% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0.6;
+  }
+
+  66% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0.25;
+  }
+}
+
+.wrapperWithOpacity {
+  animation: opacityTransparentTransition 0.2s forwards;
+}
+
+@keyframes opacityNormalTransition {
+  0% {
+    opacity: 0.25;
+  }
+
+  33% {
+    opacity: 0.4;
+  }
+
+  66% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrapperWithoutOpacity {
+  animation: opacityNormalTransition 0.2s forwards;
+}
