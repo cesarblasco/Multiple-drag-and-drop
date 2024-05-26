@@ -3,7 +3,7 @@
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
-import DragTestMultipleContainer from "./src/components/dragTestMultipleContainer/dragTestMultipleContainer.js";
+import DragTestMultipleContainer from "../../components/dragTestMultipleContainer/dragTestMultipleContainer.js";
 
 const DragTest = () => {
   return (
