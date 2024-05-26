@@ -4,6 +4,8 @@ import DragAndDroppableItem from "src/components/dragAndDroppableItem/dragAndDro
 import DraggableItem from "src/components/draggableItem/draggableItem.js";
 import MultiItemCustomDragLayer from "src/components/multiItemCustomDragLayer/multiItemCustomDragLayer.js";
 
+import "../../app/globals.css";
+
 import styles from "./dragTestMultipleContainer.module.css";
 
 const dragTestMultipleContainer = () => {
@@ -64,6 +66,11 @@ const dragTestMultipleContainer = () => {
 
   return (
     <div className={styles.wrapper}>
+      <h1>Welcome to the multiple drag and drop test repo!</h1>
+      <h2>
+        Check any checkboxes and try dragging any element(s) inside a
+        "DragAndDroppableItem" panel
+      </h2>
       <div className={styles.settings}>
         <button onClick={clearSelection}>Clear selection</button>
       </div>
